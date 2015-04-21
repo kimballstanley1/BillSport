@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @bill.name %>
+</p>
+
+<p>
+  <strong>Sponsor:</strong>
+  <%= @bill.sponsor %>
+</p>
+
+<p>
+  <strong>Summary:</strong>
+  <%= @bill.summary %>
+</p>
+
+<%= link_to 'Edit', edit_bill_path(@bill), class: "btn btn-link" %> |
+<%= link_to 'Back', bills_path, class: "btn btn-link" %>
